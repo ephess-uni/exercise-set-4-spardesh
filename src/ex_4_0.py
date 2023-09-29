@@ -9,8 +9,8 @@ FILENAME = get_data_file_path('messages.log')
 # >>>> DO NOT MODIFY CODE ABOVE <<<<
 
 
-events = []  # Initialize an empty list to store shutdown events
-    
+def get_shutdown_events(logfile):
+    events = []  # Initialize an empty list to store shutdown events    
     # Open the log file for reading
     with open(logfile, 'r') as file:
         # Iterate through each line in the file
