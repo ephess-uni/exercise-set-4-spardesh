@@ -14,10 +14,12 @@ FILENAME = get_data_file_path('messages.log')
 
 
 def num_shutdowns(logfile):
-    """
-    Your docstring here.  Replace the pass keyword below with your implementation.
-    """
-    pass
+    # Get the list of shutdown events using the get_shutdown_events function
+    shutdown_events = get_shutdown_events(logfile)
+    
+    # Return the number of shutdown events (length of the list)
+    return len(shutdown_events)
+
 
 
 # >>>> The code below will call your function and print the results
